@@ -28,6 +28,7 @@ The pipeline consists of three main stages:
 3. **Inference:** Predicting the action class using a stacked LSTM model.
 
 ![System Architecture](Figure_1.png)
+
 *(Figure 1: Confusion Matrix / System Flow)*
 
 ## 🚀 Installation & Setup
@@ -68,17 +69,6 @@ To run the live recognition system using your webcam:
     *Architecture: LSTM (64 units) -> Dropout (0.3) -> LSTM (32 units) -> Dense (7)*
 
     *Input Shape: (30 frames, 66 landmarks)*
-
- ##   📂 File Structure
-
-realtime-har-lstm/
-├── dataset/             # Raw CSV data containing landmark logs
-├── sequences/           # Preprocessed Numpy arrays for training
-├── collect_pose_data.py # Script for recording pose landmarks
-├── create_sequences.py  # Data preprocessing and windowing script
-├── train_lstm.py        # Main script for model training and evaluation
-├── requirements.txt     # List of required Python libraries
-└── README.md            # Project documentation
 
 ## 📜 License
 This project is licensed under the MIT License.
